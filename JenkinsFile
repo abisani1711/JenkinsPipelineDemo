@@ -1,0 +1,35 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Dev') {
+            steps {
+                echo 'Running Dev jobs'
+            }
+        }
+        
+        stage('QA') {
+            steps {
+                echo 'Deploying to QA '
+            }
+        }
+        
+        stage('UAT') {
+            steps {
+                echo 'Deploying to UAT'
+            }
+        }
+        
+        stage('SIT') {
+            steps {
+                echo 'Deploying to SIT'
+            }
+        }
+        
+        stage('Production') {
+            steps {
+                echo 'Deploying to Production'
+            }
+        }
+    }
+}
